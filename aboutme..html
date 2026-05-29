@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+</html>
+<html>
+<head>
+    <title>About Me Section</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            display: flex;
+            max-width: 1100px;
+            gap: 50px;
+            align-items: flex-start;
+        }
+        .image-side {
+            position: relative;
+            width: 400px;
+        }
+
+        .image-side img {
+            width: 100%;
+            border-radius: 15px;
+            display: block;
+        }
+        .image-side::after {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border: 2px solid orangered;
+            border-radius: 18px;
+            z-index: -1;
+        }
+        .content-side {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            color: lightgray;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .tabs {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .tabs a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding-bottom: 8px;
+        }
+        .tabs .active {
+            border-bottom: 3px solid orangered;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .skill-group h4 {
+            color: orangered;
+            margin: 0;
+            font-size: 14px;
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+
+        .skill-group p {
+            color: lightgray;
+            margin: 0;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="image-side">
+            <img src="D:\internship\reactfirst\public\kinsy.jpeg" alt="Profile Picture">
+        </div>
+
+        <!-- Right Column: Text and Details -->
+        <div class="content-side">
+            <h1>About Me</h1>
+            
+            <p class="description">
+                I am a technology enthusiast with a passion for technology, business, travel, and leadership. 
+                Specializing in <strong>Front-End</strong>. I believe that a product's quality begins with an exceptional user experience.
+            </p>
+            <div class="tabs">
+                <a href="#" class="active">🛠 Skills</a>
+                <a href="#">💼 Experience</a>
+                <a href="#">🎓 Education</a>
+            </div>
+            <div class="skills-list">
+                
+                <div class="skill-group">
+                    <h4>Languages</h4>
+                    <p>English and Spanish</p>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Front-End</h4>
+                    <p>React, Angular, Vue, HTML, CSS, Bootstrap, JavaScript, TypeScript</p>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Back-End</h4>
+                    <p>Node, Express, Python, Django, PHP, Laravel, Ruby, Rails</p>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Database</h4>
+                    <p>MongoDB, MySQL</p>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Tools</h4>
+                    <p>Git, GitHub, Azure DevOps, Jira, Postman, Azure Cloud, Selenium</p>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Operating Systems</h4>
+                    <p>Windows, Ubuntu, MacOS, FreeBSD</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
