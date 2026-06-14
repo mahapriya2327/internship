@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #btn { transition: transform 0.1s; padding: 10px 20px; }
+    .shake { animation: shake 0.5s; }
+    @keyframes shake { 0%, 100% {transform: translateX(0);} 25% {transform: translateX(-10px);} 75% {transform: translateX(10px);} }
+</style>
+<body>
+    <button id="btn" onclick="this.classList.add('shake'); setTimeout(()=>this.classList.remove('shake'), 500)">Shake Me!</button>
+</body>
+</html>

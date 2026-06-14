@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<style>
+    input { display: block; margin: 10px 0; padding: 8px; }
+</style>
+<body>
+    <form onsubmit="return validate(event)">
+        <input type="text" id="name" placeholder="Name">
+        <input type="password" id="pass" placeholder="Password">
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        function validate(e) {
+            e.preventDefault();
+            let name = document.getElementById("name").value;
+            if(name.length < 3) { alert("Name must be at least 3 chars!"); return false; }
+            alert("Success!");
+        }
+    </script>
+</body>
+</html>
