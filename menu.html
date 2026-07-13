@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Royal Feast Catering</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">🍽 Royal Feast Catering</h2>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="about">
+
+    <h2>Our Delicious Menu</h2>
+
+    <!-- Search Box -->
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search your favorite food..."
+            onkeyup="searchMenu()">
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+        <button onclick="filterMenu('all')">All Menu</button>
+        <button onclick="filterMenu('breakfast')">Breakfast</button>
+        <button onclick="filterMenu('lunch')">Lunch</button>
+        <button onclick="filterMenu('dinner')">Dinner</button>
+        <button onclick="filterMenu('veg')">Veg</button>
+        <button onclick="filterMenu('nonveg')">Non-Veg</button>
+        <button onclick="filterMenu('dessert')">Desserts</button>
+    </div>
+
+    <div class="features">
+
+        <div class="card breakfast">
+            <h3>🍳 Breakfast</h3>
+            <p>Idli, Dosa, Pongal, Poori, Vada, Upma</p>
+        </div>
+
+        <div class="card lunch nonveg">
+            <h3>🍛 Lunch</h3>
+            <p>Veg Meals, Chicken Biryani, Mutton Biryani, Fried Rice</p>
+        </div>
+
+        <div class="card dinner nonveg">
+            <h3>🌙 Dinner</h3>
+            <p>Parotta, Chapati, Butter Naan, Chicken Curry</p>
+        </div>
+
+        <div class="card veg">
+            <h3>🥗 Veg Special</h3>
+            <p>Paneer Butter Masala, Gobi Manchurian, Veg Pulao</p>
+        </div>
+
+        <div class="card nonveg">
+            <h3>🍗 Non-Veg Special</h3>
+            <p>Chicken 65, Fish Fry, Mutton Curry, Grill Chicken</p>
+        </div>
+
+        <div class="card dessert">
+            <h3>🍰 Desserts & Drinks</h3>
+            <p>Gulab Jamun, Ice Cream, Payasam, Fresh Juice, Soft Drinks</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Royal Feast Catering | All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

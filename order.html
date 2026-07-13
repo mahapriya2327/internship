@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order | Royal Feast Catering</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">🍽 Royal Feast Catering</h2>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html" class="active">Order</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="about">
+
+<h2>Book Your Catering</h2>
+
+<form id="orderForm">
+
+<input type="text"
+id="name"
+placeholder="Customer Name"
+required>
+
+<br><br>
+
+<input type="tel"
+id="phone"
+placeholder="Phone Number"
+required>
+
+<br><br>
+
+<select id="function">
+
+<option>Wedding</option>
+<option>Birthday Party</option>
+<option>Reception</option>
+<option>Engagement</option>
+<option>House Warming</option>
+<option>Corporate Event</option>
+
+</select>
+
+<br><br>
+
+<input
+type="number"
+id="guests"
+placeholder="Number of Guests"
+required>
+
+<br><br>
+
+<input
+type="date"
+id="date"
+required>
+
+<br><br>
+
+<textarea
+id="address"
+placeholder="Event Address"
+rows="4"
+required></textarea>
+
+<br><br>
+
+<h3>Select Food Items</h3>
+
+<label><input type="checkbox" value="Chicken Biryani"> Chicken Biryani</label><br>
+
+<label><input type="checkbox" value="Veg Meals"> Veg Meals</label><br>
+
+<label><input type="checkbox" value="Parotta"> Parotta</label><br>
+
+<label><input type="checkbox" value="Paneer Butter Masala"> Paneer Butter Masala</label><br>
+
+<label><input type="checkbox" value="Fish Fry"> Fish Fry</label><br>
+
+<label><input type="checkbox" value="Ice Cream"> Ice Cream</label>
+
+<br><br>
+
+<button class="btn" type="submit">
+Place Order
+</button>
+
+</form><div class="summary-card">
+
+    <h3>📋 Live Order Summary</h3>
+
+    <p><strong>Name:</strong> <span id="summaryName">-</span></p>
+
+    <p><strong>Function:</strong> <span id="summaryFunction">-</span></p>
+
+    <p><strong>Guests:</strong> <span id="summaryGuests">-</span></p>
+
+    <p><strong>Food Items:</strong></p>
+
+    <ul id="summaryFoods">
+        <li>No items selected</li>
+    </ul>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Royal Feast Catering | All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
